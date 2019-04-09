@@ -1,0 +1,6 @@
+bash: qexport: command not found
+bash: /Users/andrewparnell/.bash_profile: line 5: syntax error near unexpected token `category="LC_ALL",'
+bash: /Users/andrewparnell/.bash_profile: line 5: `Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")'
+]0;~/GDrive/Conferences&Talks/Intro_BART_20181205[?1034hAndrews-MacBook-Pro:Intro_BART_20181205 andrewparnell$ [KAndrews-MacBook-Pro:Intro_BART_20181205 andrewparnell$ pwd
+/Users/andrewparnell/GDrive/Conferences&Talks/Intro_BART_20181205
+]0;~/GDrive/Conferences&Talks/Intro_BART_20181205Andrews-MacBook-Pro:Intro_BART_20181205 andrewparnell$ 

@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543851895775.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2150084257",
+    "id" : "F3BCEE37",
+    "lastKnownWriteTime" : 1543925008,
+    "last_content_update" : 1543925008877,
+    "path" : "~/GDrive/Conferences&Talks/Intro_BART_20181205/BART_compare.R",
+    "project_path" : "BART_compare.R",
+    "properties" : {
+        "cursorPosition" : "96,18",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

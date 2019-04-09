@@ -1,0 +1,85 @@
+---
+title: "Introduction to Bayesian Additive Regression Trees"
+date: "5th December, 2018"
+author: 
+  - "Andrew C Parnell"
+output:
+  xaringan::moon_reader:
+    css: [default, maynooth, maynooth-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+
+# Goals
+
+- Teach my PhD students the basics of BART
+- Get the other Hamiltonians interested in collaborating on BART
+- Get the statistics group up to speed on where they can work on BART
+
+---
+
+# What is BART?
+
+```{r, echo = FALSE, out.height="200"}
+myimages<- c("https://img.huffingtonpost.com/asset/579f38881200007404a54711.jpeg",
+             "https://media.ktvu.com/media.ktvu.com/photo/2015/07/31/28934772_6282569_G_70469_ver1.0_640_360.jpg")
+knitr::include_graphics(myimages)
+```
+
+***
+
+$$\Huge y = \sum_{j=1}^M g(X, T_j, \Theta_j) + \epsilon$$
+
+---
+
+## BART works (part 1)
+
+A commonly used method for simulating complex regression-type data is:
+
+$$y = \beta_1 \sin(x_1 x_2) + \beta_2 (x_3 - 0.5)^2 + \beta_3 x_4 + \beta_5 x_5 + \epsilon; \; \epsilon \sim N(0, 1)$$
+
+where $x_j \sim N(0, 1)$ for $j=1, \ldots, 5$
+
+From the Freidman Multivariate Adaptive Regression Splines paper of 1991
+
+Task is to create good predictions of 
+
+
+---
+
+## BART works (part 2)
+
+![boston_housing](Boston_housing_benchmark.pdf)
+
+
+---
+
+## BART works (part 2)
+
+![boston_housing](Friedman_benchmark.pdf)
+
+---
+
+
+# Something else
+
+<img src="https://img.huffingtonpost.com/asset/579f38881200007404a54711.jpeg" alt="BART" style="height:200px;"/>
+
+<img src="https://media.ktvu.com/media.ktvu.com/photo/2015/07/31/28934772_6282569_G_70469_ver1.0_640_360.jpg" alt="BART2" style="height:200px;"/>
+
+
+
+---
+
+
+class: center, middle, inverse
+
+# Questions?
+

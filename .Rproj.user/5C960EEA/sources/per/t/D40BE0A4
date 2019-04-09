@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543851859693.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3343893264",
+    "id" : "D40BE0A4",
+    "lastKnownWriteTime" : 1544006828,
+    "last_content_update" : 1544006828890,
+    "path" : "~/GDrive/Conferences&Talks/Intro_BART_20181205/intro_BART.Rmd",
+    "project_path" : "intro_BART.Rmd",
+    "properties" : {
+        "chunk_output_type" : "console",
+        "content_preview_inline" : "false",
+        "cursorPosition" : "353,21",
+        "last_setup_crc32" : "",
+        "scrollLine" : "338"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

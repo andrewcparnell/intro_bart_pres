@@ -1,0 +1,93 @@
+# A simple script to compare BART against other methods on basic data sets
+
+library(mlr)
+library(mlbench)
+library(ggplot2)
+
+# Get the data
+data(BostonHousing, package = "mlbench")
+
+# Set the seed
+set.seed(123)
+
+# Set the task
+regr.task = makeRegrTask(id = "bh", data = BostonHousing, target = "medv")
+regr.task
+
+# Choose learners
+lrns = list(makeLearner("regr.lm"), 
+            makeLearner("regr.randomForest"),
+            makeLearner("regr.svm"),
+            makeLearner("regr.h2o.deeplearning"),
+            makeLearner("regr.bartMachine"))
+
+# resample description
+rdesc = makeResampleDesc("CV", iters = 10)
+
+# Conduct the benchmark experiment
+bmr = benchmark(lrns, regr.task, rdesc, measures = list(rmse))
+
+# Compare
+p = plotBMRBoxplots(bmr)
+
+# Do the plot properly
+plot_dat = p$data
+levels(plot_dat$learner.id) = c("Linear regression", 
+                                "Random forests", 
+                                "Support vector regression", 
+                                "Deep learning", 
+                                "BART")
+ggplot(plot_dat, aes(x = learner.id, y = rmse, group = learner.id, fill = learner.id)) + 
+  geom_boxplot() + 
+  theme_bw() + 
+  labs(title = 'Out of sample 10-fold cross validation root mean square error',
+       x = '',
+       y = 'Root mean square error') + 
+  coord_flip() + 
+  theme(legend.position = 'None')
+ggsave('Boston_housing_benchmark.pdf', width = 8, height = 6)
+
+# Friedman example --------------------------------------------------------
+
+source('https://raw.githubusercontent.com/andrewcparnell/rBART/master/rBART.R')
+
+# Now do it on the Friedman example
+set.seed(123)
+dat = sim_friedman(500)
+dat2 = data.frame(dat$X, dat$y)
+
+# Create new task
+regr2.task = makeRegrTask(id = "fr", data = dat2, target = "dat.y")
+
+# Choose learners
+lrns = list(makeLearner("regr.lm"), 
+            makeLearner("regr.randomForest"),
+            makeLearner("regr.svm"),
+            makeLearner("regr.h2o.deeplearning"),
+            makeLearner("regr.bartMachine"))
+
+# resample description
+rdesc = makeResampleDesc("CV", iters = 10)
+
+# Conduct the benchmark experiment
+bmr2 = benchmark(lrns, regr2.task, rdesc, measures = list(rmse))
+
+# Compare
+p2 = plotBMRBoxplots(bmr2)
+
+# Do the plot properly
+plot_dat2 = p2$data
+levels(plot_dat2$learner.id) = c("Linear regression", 
+                                "Random forests", 
+                                "Support vector regression", 
+                                "Deep learning", 
+                                "BART")
+ggplot(plot_dat2, aes(x = learner.id, y = rmse, group = learner.id, fill = learner.id)) + 
+  geom_boxplot() + 
+  theme_bw() + 
+  labs(title = 'Out of sample 10-fold cross validation root mean square error',
+       x = '',
+       y = 'Root mean square error') + 
+  coord_flip() + 
+  theme(legend.position = 'None')
+ggsave('Friedman_benchmark.pdf', width = 8, height = 6)

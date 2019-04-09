@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543926119113.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "256083281",
+    "id" : "9CF6F3C9",
+    "lastKnownWriteTime" : 1533108915,
+    "last_content_update" : 1533108915,
+    "path" : "~/GitHub/rBART/maths/Maths.tex",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "58,39",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "tex"
+}

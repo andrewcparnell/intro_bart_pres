@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1554808586687.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2694705867",
+    "id" : "39685340",
+    "lastKnownWriteTime" : 1554808792,
+    "last_content_update" : 1554808792287,
+    "path" : "~/Google Drive/Conferences&Talks/CBank_Intro_BART_20190410/intro_BART.Rmd",
+    "project_path" : "intro_BART.Rmd",
+    "properties" : {
+        "chunk_output_type" : "console",
+        "cursorPosition" : "1,0",
+        "ignored_words" : "McCulloch,Freidman\n",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

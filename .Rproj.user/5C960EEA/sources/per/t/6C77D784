@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543925237256.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2301314611",
+    "id" : "6C77D784",
+    "lastKnownWriteTime" : 1543930064,
+    "last_content_update" : 1543930064635,
+    "path" : "~/GitHub/rBART/run_rBART.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "41,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

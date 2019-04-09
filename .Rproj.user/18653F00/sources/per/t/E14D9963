@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543847737542.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "620300169",
+    "id" : "E14D9963",
+    "lastKnownWriteTime" : 1521634818,
+    "last_content_update" : 1521634818,
+    "path" : "/Volumes/MacintoshHD2/GitHub/rBART/rBART.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "938,0",
+        "scrollLine" : "908"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
